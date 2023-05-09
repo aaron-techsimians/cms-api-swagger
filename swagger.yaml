@@ -3,7 +3,7 @@ info:
   title: Cms_API
   version: 1.0.0
 servers:
-  - url: https://cors-anywhere.herokuapp.com/https://api-dev.diabosapp.biz/cms-api/
+  - url: https://api-dev.diabosapp.biz/cms-api/
 tags:
   - name: DiabosUsers
   - name: Emails
@@ -26,14 +26,6 @@ paths:
         - DiabosUsers
       summary: users get
       parameters:
-        - name: authority
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: dev-cms-api.diabosapp.biz
         - name: accept
           in: header
           required: false
@@ -42,14 +34,6 @@ paths:
           schema:
             type: string
           example: application/json
-        - name: accept-language
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: en-US,en;q=0.9
         - name: x-api-key
           in: header
           required: false
@@ -76,22 +60,6 @@ paths:
           schema:
             type: string
           example: application/json
-        - name: origin
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: https://dev-cms.diabosapp.biz
-        - name: referer
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: https://dev-cms.diabosapp.biz/
         - name: sec-ch-ua
           in: header
           required: false
@@ -140,16 +108,6 @@ paths:
           schema:
             type: string
           example: same-site
-        - name: user-agent
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: >-
-            Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-            like Gecko) Chrome/111.0.0.0 Safari/537.36
       requestBody:
         content:
           application/json:
@@ -190,14 +148,6 @@ paths:
         - Emails
       summary: emails get
       parameters:
-        - name: authority
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: dev-cms-api.diabosapp.biz
         - name: accept
           in: header
           required: false
@@ -206,14 +156,6 @@ paths:
           schema:
             type: string
           example: application/json
-        - name: accept-language
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: en-US,en;q=0.9
         - name: x-api-key
           in: header
           required: false
@@ -240,22 +182,6 @@ paths:
           schema:
             type: string
           example: application/json
-        - name: origin
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: https://dev-cms.diabosapp.biz
-        - name: referer
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: https://dev-cms.diabosapp.biz/
         - name: sec-ch-ua
           in: header
           required: false
@@ -304,16 +230,6 @@ paths:
           schema:
             type: string
           example: same-site
-        - name: user-agent
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: >-
-            Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-            like Gecko) Chrome/111.0.0.0 Safari/537.36
       requestBody:
         content:
           application/json:
@@ -351,14 +267,6 @@ paths:
         - Agents/Beneficiaries
       summary: Agent get
       parameters:
-        - name: authority
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: dev-cms-api.diabosapp.biz
         - name: accept
           in: header
           required: false
@@ -367,14 +275,6 @@ paths:
           schema:
             type: string
           example: application/json
-        - name: accept-language
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: en-US,en;q=0.9
         - name: x-api-key
           in: header
           required: false
@@ -401,22 +301,6 @@ paths:
           schema:
             type: string
           example: application/json
-        - name: origin
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: https://dev-cms.diabosapp.biz
-        - name: referer
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: https://dev-cms.diabosapp.biz/
         - name: sec-ch-ua
           in: header
           required: false
@@ -465,16 +349,6 @@ paths:
           schema:
             type: string
           example: same-site
-        - name: user-agent
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: >-
-            Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-            like Gecko) Chrome/111.0.0.0 Safari/537.36
       requestBody:
         content:
           application/json:
@@ -494,14 +368,6 @@ paths:
         - Agents/Beneficiaries
       summary: Agent getOne
       parameters:
-        - name: authority
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: dev-cms-api.diabosapp.biz
         - name: accept
           in: header
           required: false
@@ -510,14 +376,6 @@ paths:
           schema:
             type: string
           example: application/json
-        - name: accept-language
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: en-US,en;q=0.9
         - name: x-api-key
           in: header
           required: false
@@ -544,22 +402,6 @@ paths:
           schema:
             type: string
           example: application/json
-        - name: origin
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: https://dev-cms.diabosapp.biz
-        - name: referer
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: https://dev-cms.diabosapp.biz/
         - name: sec-ch-ua
           in: header
           required: false
@@ -608,16 +450,6 @@ paths:
           schema:
             type: string
           example: same-site
-        - name: user-agent
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: >-
-            Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-            like Gecko) Chrome/111.0.0.0 Safari/537.36
       requestBody:
         content:
           application/json:
@@ -637,14 +469,6 @@ paths:
         - Agents/Beneficiaries
       summary: agent getPort
       parameters:
-        - name: authority
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: dev-cms-api.diabosapp.biz
         - name: accept
           in: header
           required: false
@@ -653,14 +477,6 @@ paths:
           schema:
             type: string
           example: application/json
-        - name: accept-language
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: en-US,en;q=0.9
         - name: x-api-key
           in: header
           required: false
@@ -687,22 +503,6 @@ paths:
           schema:
             type: string
           example: application/json
-        - name: origin
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: https://dev-cms.diabosapp.biz
-        - name: referer
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: https://dev-cms.diabosapp.biz/
         - name: sec-ch-ua
           in: header
           required: false
@@ -751,16 +551,6 @@ paths:
           schema:
             type: string
           example: same-site
-        - name: user-agent
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: >-
-            Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-            like Gecko) Chrome/111.0.0.0 Safari/537.36
       requestBody:
         content:
           application/json:
@@ -780,14 +570,6 @@ paths:
         - Cut-off
       summary: cutoffMasters insert
       parameters:
-        - name: authority
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: dev-cms-api.diabosapp.biz
         - name: accept
           in: header
           required: false
@@ -796,14 +578,6 @@ paths:
           schema:
             type: string
           example: application/json
-        - name: accept-language
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: en-US,en;q=0.9
         - name: x-api-key
           in: header
           required: false
@@ -830,22 +604,6 @@ paths:
           schema:
             type: string
           example: application/json
-        - name: origin
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: https://dev-cms.diabosapp.biz
-        - name: referer
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: https://dev-cms.diabosapp.biz/
         - name: sec-ch-ua
           in: header
           required: false
@@ -894,16 +652,6 @@ paths:
           schema:
             type: string
           example: same-site
-        - name: user-agent
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: >-
-            Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-            like Gecko) Chrome/110.0.0.0 Safari/537.36
       requestBody:
         content:
           application/json:
@@ -923,14 +671,6 @@ paths:
         - Cut-off
       summary: cutoffMasters get
       parameters:
-        - name: authority
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: dev-cms-api.diabosapp.biz
         - name: accept
           in: header
           required: false
@@ -939,14 +679,6 @@ paths:
           schema:
             type: string
           example: application/json
-        - name: accept-language
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: en-US,en;q=0.9
         - name: x-api-key
           in: header
           required: false
@@ -973,22 +705,6 @@ paths:
           schema:
             type: string
           example: application/json
-        - name: origin
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: https://dev-cms.diabosapp.biz
-        - name: referer
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: https://dev-cms.diabosapp.biz/
         - name: sec-ch-ua
           in: header
           required: false
@@ -1037,16 +753,6 @@ paths:
           schema:
             type: string
           example: same-site
-        - name: user-agent
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: >-
-            Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-            like Gecko) Chrome/111.0.0.0 Safari/537.36
       requestBody:
         content:
           application/json:
@@ -1066,14 +772,6 @@ paths:
         - Cut-off
       summary: cutoffMasters edit
       parameters:
-        - name: authority
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: dev-cms-api.diabosapp.biz
         - name: accept
           in: header
           required: false
@@ -1082,14 +780,6 @@ paths:
           schema:
             type: string
           example: application/json
-        - name: accept-language
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: en-US,en;q=0.9
         - name: x-api-key
           in: header
           required: false
@@ -1116,22 +806,6 @@ paths:
           schema:
             type: string
           example: application/json
-        - name: origin
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: https://dev-cms.diabosapp.biz
-        - name: referer
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: https://dev-cms.diabosapp.biz/
         - name: sec-ch-ua
           in: header
           required: false
@@ -1180,16 +854,6 @@ paths:
           schema:
             type: string
           example: same-site
-        - name: user-agent
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: >-
-            Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-            like Gecko) Chrome/111.0.0.0 Safari/537.36
       requestBody:
         content:
           application/json:
@@ -1209,14 +873,6 @@ paths:
         - Operators
       summary: operators getOne
       parameters:
-        - name: authority
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: dev-cms-api.diabosapp.biz
         - name: accept
           in: header
           required: false
@@ -1225,14 +881,6 @@ paths:
           schema:
             type: string
           example: application/json
-        - name: accept-language
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: en-US,en;q=0.9
         - name: x-api-key
           in: header
           required: false
@@ -1259,22 +907,6 @@ paths:
           schema:
             type: string
           example: application/json
-        - name: origin
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: https://dev-cms.diabosapp.biz
-        - name: referer
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: https://dev-cms.diabosapp.biz/
         - name: sec-ch-ua
           in: header
           required: false
@@ -1323,16 +955,6 @@ paths:
           schema:
             type: string
           example: same-site
-        - name: user-agent
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: >-
-            Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-            like Gecko) Chrome/111.0.0.0 Safari/537.36
       requestBody:
         content:
           application/json:
@@ -1370,14 +992,6 @@ paths:
         - Payments
       summary: payment getPaymentForOperator
       parameters:
-        - name: authority
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: dev-cms-api.diabosapp.biz
         - name: accept
           in: header
           required: false
@@ -1386,14 +1000,6 @@ paths:
           schema:
             type: string
           example: application/json
-        - name: accept-language
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: en-US,en;q=0.9
         - name: x-api-key
           in: header
           required: false
@@ -1420,22 +1026,6 @@ paths:
           schema:
             type: string
           example: application/json
-        - name: origin
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: https://dev-cms.diabosapp.biz
-        - name: referer
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: https://dev-cms.diabosapp.biz/
         - name: sec-ch-ua
           in: header
           required: false
@@ -1484,16 +1074,6 @@ paths:
           schema:
             type: string
           example: same-site
-        - name: user-agent
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: >-
-            Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-            like Gecko) Chrome/110.0.0.0 Safari/537.36
       requestBody:
         content:
           application/json:
@@ -1513,14 +1093,6 @@ paths:
         - Payments
       summary: payment editStatus
       parameters:
-        - name: authority
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: dev-cms-api.diabosapp.biz
         - name: accept
           in: header
           required: false
@@ -1529,14 +1101,6 @@ paths:
           schema:
             type: string
           example: application/json
-        - name: accept-language
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: en-US,en
         - name: authorization
           in: header
           required: false
@@ -1555,22 +1119,6 @@ paths:
           schema:
             type: string
           example: application/json
-        - name: origin
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: http://localhost:4200
-        - name: referer
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: http://localhost:4200/
         - name: sec-fetch-dest
           in: header
           required: false
@@ -1603,16 +1151,6 @@ paths:
           schema:
             type: integer
           example: '1'
-        - name: user-agent
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: >-
-            Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-            like Gecko) Chrome/111.0.0.0 Safari/537.36
       requestBody:
         content:
           application/json:
@@ -1632,14 +1170,6 @@ paths:
         - Sanctioned Entities
       summary: sanctionedCountries get
       parameters:
-        - name: authority
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: dev-cms-api.diabosapp.biz
         - name: accept
           in: header
           required: false
@@ -1648,14 +1178,6 @@ paths:
           schema:
             type: string
           example: application/json
-        - name: accept-language
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: en-US,en;q=0.9
         - name: x-api-key
           in: header
           required: false
@@ -1682,22 +1204,6 @@ paths:
           schema:
             type: string
           example: application/json
-        - name: origin
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: https://dev-cms.diabosapp.biz
-        - name: referer
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: https://dev-cms.diabosapp.biz/
         - name: sec-ch-ua
           in: header
           required: false
@@ -1746,16 +1252,6 @@ paths:
           schema:
             type: string
           example: same-site
-        - name: user-agent
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: >-
-            Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-            like Gecko) Chrome/111.0.0.0 Safari/537.36
       requestBody:
         content:
           application/json:
@@ -1775,14 +1271,6 @@ paths:
         - Sanctioned Entities
       summary: sanctionedCountries edit
       parameters:
-        - name: authority
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: dev-cms-api.diabosapp.biz
         - name: accept
           in: header
           required: false
@@ -1791,14 +1279,6 @@ paths:
           schema:
             type: string
           example: application/json
-        - name: accept-language
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: en-US,en;q=0.9
         - name: x-api-key
           in: header
           required: false
@@ -1825,22 +1305,6 @@ paths:
           schema:
             type: string
           example: application/json
-        - name: origin
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: https://dev-cms.diabosapp.biz
-        - name: referer
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: https://dev-cms.diabosapp.biz/
         - name: sec-ch-ua
           in: header
           required: false
@@ -1889,16 +1353,6 @@ paths:
           schema:
             type: string
           example: same-site
-        - name: user-agent
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: >-
-            Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-            like Gecko) Chrome/111.0.0.0 Safari/537.36
       requestBody:
         content:
           application/json:
@@ -1918,14 +1372,6 @@ paths:
         - Templates
       summary: template get
       parameters:
-        - name: authority
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: dev-cms-api.diabosapp.biz
         - name: accept
           in: header
           required: false
@@ -1934,14 +1380,6 @@ paths:
           schema:
             type: string
           example: application/json
-        - name: accept-language
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: en-US,en;q=0.9
         - name: x-api-key
           in: header
           required: false
@@ -1968,22 +1406,6 @@ paths:
           schema:
             type: string
           example: application/json
-        - name: origin
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: https://dev-cms.diabosapp.biz
-        - name: referer
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: https://dev-cms.diabosapp.biz/
         - name: sec-ch-ua
           in: header
           required: false
@@ -2032,16 +1454,6 @@ paths:
           schema:
             type: string
           example: same-site
-        - name: user-agent
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: >-
-            Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-            like Gecko) Chrome/111.0.0.0 Safari/537.36
       requestBody:
         content:
           application/json:
@@ -2061,14 +1473,6 @@ paths:
         - Templates
       summary: template insert
       parameters:
-        - name: authority
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: dev-cms-api.diabosapp.biz
         - name: accept
           in: header
           required: false
@@ -2077,14 +1481,6 @@ paths:
           schema:
             type: string
           example: application/json
-        - name: accept-language
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: en-US,en;q=0.9
         - name: x-api-key
           in: header
           required: false
@@ -2111,22 +1507,6 @@ paths:
           schema:
             type: string
           example: application/json
-        - name: origin
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: https://dev-cms.diabosapp.biz
-        - name: referer
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: https://dev-cms.diabosapp.biz/
         - name: sec-ch-ua
           in: header
           required: false
@@ -2175,16 +1555,6 @@ paths:
           schema:
             type: string
           example: same-site
-        - name: user-agent
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: >-
-            Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-            like Gecko) Chrome/111.0.0.0 Safari/537.36
       requestBody:
         content:
           application/json:
@@ -2204,14 +1574,6 @@ paths:
         - Templates
       summary: template edit
       parameters:
-        - name: authority
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: dev-cms-api.diabosapp.biz
         - name: accept
           in: header
           required: false
@@ -2220,14 +1582,6 @@ paths:
           schema:
             type: string
           example: application/json
-        - name: accept-language
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: en-US,en;q=0.9
         - name: x-api-key
           in: header
           required: false
@@ -2254,22 +1608,6 @@ paths:
           schema:
             type: string
           example: application/json
-        - name: origin
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: https://dev-cms.diabosapp.biz
-        - name: referer
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: https://dev-cms.diabosapp.biz/
         - name: sec-ch-ua
           in: header
           required: false
@@ -2318,16 +1656,6 @@ paths:
           schema:
             type: string
           example: same-site
-        - name: user-agent
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: >-
-            Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-            like Gecko) Chrome/111.0.0.0 Safari/537.36
       requestBody:
         content:
           application/json:
@@ -2347,14 +1675,6 @@ paths:
         - Vendors
       summary: vendors getOne
       parameters:
-        - name: authority
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: dev-cms-api.diabosapp.biz
         - name: accept
           in: header
           required: false
@@ -2363,14 +1683,6 @@ paths:
           schema:
             type: string
           example: application/json
-        - name: accept-language
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: en-US,en;q=0.9
         - name: x-api-key
           in: header
           required: false
@@ -2397,22 +1709,7 @@ paths:
           schema:
             type: string
           example: application/json
-        - name: origin
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: https://dev-cms.diabosapp.biz
-        - name: referer
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: https://dev-cms.diabosapp.biz/
+          
         - name: sec-ch-ua
           in: header
           required: false
@@ -2461,16 +1758,6 @@ paths:
           schema:
             type: string
           example: same-site
-        - name: user-agent
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: >-
-            Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-            like Gecko) Chrome/111.0.0.0 Safari/537.36
       requestBody:
         content:
           application/json:
@@ -2490,14 +1777,6 @@ paths:
         - Vendors
       summary: vendors get
       parameters:
-        - name: authority
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: dev-cms-api.diabosapp.biz
         - name: accept
           in: header
           required: false
@@ -2506,14 +1785,6 @@ paths:
           schema:
             type: string
           example: application/json
-        - name: accept-language
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: en-US,en;q=0.9
         - name: x-api-key
           in: header
           required: false
@@ -2540,22 +1811,6 @@ paths:
           schema:
             type: string
           example: application/json
-        - name: origin
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: https://dev-cms.diabosapp.biz
-        - name: referer
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: https://dev-cms.diabosapp.biz/
         - name: sec-ch-ua
           in: header
           required: false
@@ -2604,16 +1859,6 @@ paths:
           schema:
             type: string
           example: same-site
-        - name: user-agent
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: >-
-            Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-            like Gecko) Chrome/111.0.0.0 Safari/537.36
       requestBody:
         content:
           application/json:
@@ -2633,14 +1878,6 @@ paths:
         - Vessels
       summary: vessel get
       parameters:
-        - name: authority
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: dev-cms-api.diabosapp.biz
         - name: accept
           in: header
           required: false
@@ -2649,14 +1886,6 @@ paths:
           schema:
             type: string
           example: application/json
-        - name: accept-language
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: en-US,en;q=0.9
         - name: x-api-key
           in: header
           required: false
@@ -2683,22 +1912,6 @@ paths:
           schema:
             type: string
           example: application/json
-        - name: origin
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: https://dev-cms.diabosapp.biz
-        - name: referer
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: https://dev-cms.diabosapp.biz/
         - name: sec-ch-ua
           in: header
           required: false
@@ -2747,16 +1960,6 @@ paths:
           schema:
             type: string
           example: same-site
-        - name: user-agent
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: >-
-            Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-            like Gecko) Chrome/111.0.0.0 Safari/537.36
       requestBody:
         content:
           application/json:
@@ -2776,14 +1979,6 @@ paths:
         - Logs
       summary: logs get
       parameters:
-        - name: authority
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: dev-cms-api.diabosapp.biz
         - name: accept
           in: header
           required: false
@@ -2792,14 +1987,6 @@ paths:
           schema:
             type: string
           example: application/json
-        - name: accept-language
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: en-US,en;q=0.9
         - name: x-api-key
           in: header
           required: false
@@ -2826,22 +2013,6 @@ paths:
           schema:
             type: string
           example: application/json
-        - name: origin
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: https://dev-cms.diabosapp.biz
-        - name: referer
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: https://dev-cms.diabosapp.biz/
         - name: sec-ch-ua
           in: header
           required: false
@@ -2890,16 +2061,6 @@ paths:
           schema:
             type: string
           example: same-site
-        - name: user-agent
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: >-
-            Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-            like Gecko) Chrome/111.0.0.0 Safari/537.36
       requestBody:
         content:
           application/json:
@@ -2939,14 +2100,6 @@ paths:
         - Trust Accounts
       summary: trustAccount insert
       parameters:
-        - name: authority
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: dev-cms-api.diabosapp.biz
         - name: accept
           in: header
           required: false
@@ -2955,14 +2108,6 @@ paths:
           schema:
             type: string
           example: application/json
-        - name: accept-language
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: en-US,en
         - name: authorization
           in: header
           required: false
@@ -2981,22 +2126,6 @@ paths:
           schema:
             type: string
           example: application/json
-        - name: origin
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: http://localhost:4200
-        - name: referer
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: http://localhost:4200/
         - name: sec-fetch-dest
           in: header
           required: false
@@ -3029,16 +2158,6 @@ paths:
           schema:
             type: integer
           example: '1'
-        - name: user-agent
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: >-
-            Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-            like Gecko) Chrome/111.0.0.0 Safari/537.36
       requestBody:
         content:
           application/json:
@@ -3058,14 +2177,6 @@ paths:
         - Trust Accounts
       summary: trustAccount edit
       parameters:
-        - name: authority
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: dev-cms-api.diabosapp.biz
         - name: accept
           in: header
           required: false
@@ -3074,14 +2185,6 @@ paths:
           schema:
             type: string
           example: application/json
-        - name: accept-language
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: en-US,en
         - name: authorization
           in: header
           required: false
@@ -3100,22 +2203,6 @@ paths:
           schema:
             type: string
           example: application/json
-        - name: origin
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: http://localhost:4200
-        - name: referer
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: http://localhost:4200/
         - name: sec-fetch-dest
           in: header
           required: false
@@ -3148,16 +2235,6 @@ paths:
           schema:
             type: integer
           example: '1'
-        - name: user-agent
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: >-
-            Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-            like Gecko) Chrome/111.0.0.0 Safari/537.36
       requestBody:
         content:
           application/json:
@@ -3177,14 +2254,6 @@ paths:
         - Trust Accounts
       summary: trustAccount find
       parameters:
-        - name: authority
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: dev-cms-api.diabosapp.biz
         - name: accept
           in: header
           required: false
@@ -3193,14 +2262,6 @@ paths:
           schema:
             type: string
           example: application/json
-        - name: accept-language
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: en-US,en;q=0.9
         - name: x-api-key
           in: header
           required: false
@@ -3217,22 +2278,6 @@ paths:
           schema:
             type: string
           example: application/json
-        - name: origin
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: https://dev-cms.diabosapp.biz
-        - name: referer
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: https://dev-cms.diabosapp.biz/
         - name: sec-ch-ua
           in: header
           required: false
@@ -3281,16 +2326,6 @@ paths:
           schema:
             type: string
           example: same-site
-        - name: user-agent
-          in: header
-          required: false
-          style: simple
-          explode: false
-          schema:
-            type: string
-          example: >-
-            Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-            like Gecko) Chrome/111.0.0.0 Safari/537.36
       requestBody:
         content:
           application/json:
